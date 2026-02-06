@@ -1904,3 +1904,246 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
+
+/* NEW */
+    /* Particle Canvas Background */
+    #particles-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+      opacity: 0.3;
+    }
+
+    
+    /* Floating animation for avatar */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .avatar-box img {
+      animation: float 3s ease-in-out infinite;
+      transition: transform 0.3s ease;
+    }
+
+    .avatar-box img:hover {
+      transform: scale(1.1) rotate(5deg) !important;
+      animation: none;
+    }
+
+        /* Glowing pulse effect */
+    @keyframes glow-pulse {
+      0%, 100% {
+        box-shadow: 0 0 5px rgba(255, 187, 84, 0.4),
+                    0 0 10px rgba(255, 187, 84, 0.3),
+                    0 0 15px rgba(255, 187, 84, 0.2);
+      }
+      50% {
+        box-shadow: 0 0 10px rgba(255, 187, 84, 0.6),
+                    0 0 20px rgba(255, 187, 84, 0.4),
+                    0 0 30px rgba(255, 187, 84, 0.3);
+      }
+    }
+
+        .avatar-box {
+      animation: glow-pulse 2s ease-in-out infinite;
+    }
+
+    /* Icon rotation on hover */
+    .icon-box {
+      transition: transform 0.4s ease, filter 0.3s ease;
+    }
+
+    .icon-box:hover {
+      transform: rotate(360deg) scale(1.2);
+      filter: drop-shadow(0 0 10px rgba(255, 187, 84, 0.6));
+    }
+
+     /* Enhanced service item hover */
+    .service-item {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .service-item:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 10px 30px rgba(255, 187, 84, 0.2);
+    }
+
+    .service-icon-box img {
+      transition: transform 0.4s ease, filter 0.3s ease;
+    }
+
+    .service-item:hover .service-icon-box img {
+      transform: scale(1.15) rotate(5deg);
+      filter: drop-shadow(0 0 10px rgba(255, 187, 84, 0.5));
+    }
+
+    /* Gradient text animation */
+    @keyframes gradient-shift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .article-title {
+      background: linear-gradient(90deg, #ffbb54, #ff9d42, #ffbb54, #ffd700);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradient-shift 3s ease infinite;
+    }
+
+
+      /* Social links bounce */
+    .social-item {
+      transition: transform 0.3s ease;
+    }
+
+    .social-item:hover {
+      transform: translateY(-5px);
+      animation: bounce 0.6s ease;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(-5px); }
+      40% { transform: translateY(-10px); }
+      60% { transform: translateY(-7px); }
+    }
+
+      /* Page transition fade */
+    article {
+      animation: pageIn 0.5s ease-out;
+    }
+        @keyframes pageIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+        /* Main content entrance */
+    .main-content {
+      animation: slideInRight 0.6s ease-out;
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+      /* Cursor glow trail effect */
+    .cursor-glow {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 187, 84, 0.6), transparent);
+      pointer-events: none;
+      z-index: 9999;
+      transition: transform 0.15s ease;
+      mix-blend-mode: screen;
+    }
+
+    /* Text selection color */
+    ::selection {
+      background: rgba(255, 187, 84, 0.3);
+      color: #fff;
+    }
+
+    /* Smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Enhanced separator line */
+    .separator {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .separator::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 187, 84, 0.5), transparent);
+      animation: separatorGlow 3s ease-in-out infinite;
+    }
+
+    @keyframes separatorGlow {
+      0%, 100% { left: -100%; }
+      50% { left: 100%; }
+    }
+
+    /* Client logo effects */
+    .clients-item img {
+      transition: transform 0.4s ease, filter 0.4s ease;
+      filter: grayscale(100%);
+    }
+
+    .clients-item:hover img {
+      transform: scale(1.1);
+      filter: grayscale(0%) brightness(1.1);
+    }
+
+    /* Testimonial item hover */
+    .testimonials-item {
+      transition: transform 0.4s ease;
+    }
+
+    .testimonials-item:hover {
+      transform: scale(1.03);
+    }
+
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 100%;  
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffbb54;
+  }
+}
+
+.name {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  border-right: 3px solid #ffbb54;
+
+  /* ⬇️ Longer total duration = longer pause */
+  animation:
+    typing 7s steps(13, end) infinite,
+    blink-caret 0.75s step-end infinite;
+
+  width: 0;
+}
