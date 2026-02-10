@@ -29,7 +29,7 @@
   <!-- 🎨 PARTICLE CANVAS BACKGROUND -->
   <canvas id="particles-canvas"></canvas>
 
-    <!-- 🎨 CURSOR GLOW EFFECT -->
+  <!-- 🎨 CURSOR GLOW EFFECT -->
   <div class="cursor-glow"></div>
   <!--
     - #MAIN
@@ -388,7 +388,7 @@
               </div>
             </li>
 
-                 <!-- Shibaprasad Madala -->
+            <!-- Shibaprasad Madala -->
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
 
@@ -400,8 +400,12 @@
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Tejas is a highly creative and detail-oriented UI/UX developer with a strong sense of user-centric design. He has an excellent ability to transform complex ideas into clean, intuitive, and visually appealing interfaces. His understanding of design principles, usability, and modern trends really stands out. Tejas is also a great collaborator who takes feedback positively and delivers consistent quality. His designs significantly enhance the overall user experience of any product.
- 
+                    Tejas is a highly creative and detail-oriented UI/UX developer with a strong sense of user-centric
+                    design. He has an excellent ability to transform complex ideas into clean, intuitive, and visually
+                    appealing interfaces. His understanding of design principles, usability, and modern trends really
+                    stands out. Tejas is also a great collaborator who takes feedback positively and delivers consistent
+                    quality. His designs significantly enhance the overall user experience of any product.
+
                   </p>
                 </div>
 
@@ -522,15 +526,13 @@
       <article class="resume" data-page="resume">
 
         <header class="resume-header">
-  <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">Resume</h2>
 
-  <!-- Download Resume Button -->
-  <a href="assets/resume/TejasNamayeResume.pdf"
-     download
-     class="download-btn">
-    Download Resume
-  </a>
-</header>
+          <!-- Download Resume Button -->
+          <a href="assets/resume/TejasNamayeResume.pdf" download class="download-btn">
+            Download Resume
+          </a>
+        </header>
 
 
         <!-- Education -->
@@ -717,6 +719,10 @@
             <li class="filter-item">
               <button data-filter-btn>Web development</button>
             </li>
+            <li class="filter-item">
+              <button data-filter-btn>Graphics</button>
+            </li>
+
 
           </ul>
 
@@ -749,6 +755,10 @@
               <li class="select-item">
                 <button data-select-item>Web development</button>
               </li>
+              <li class="select-item">
+                <button data-select-item>Graphics</button>
+              </li>
+
 
             </ul>
 
@@ -809,8 +819,25 @@
 
               </a>
             </li>
+            <li class="project-item active" data-filter-item data-category="graphics">
+              <a href="#">
 
-               <li class="project-item  active" data-filter-item data-category="web design">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Posters.jpg" alt="graphics work" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brand Poster Design</h3>
+                <p class="project-category">Graphics</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#" rel="noopener noreferrer">
 
                 <figure class="project-img">
@@ -991,37 +1018,43 @@
             </li>
 
 
-            <!-- <li class="blog-post-item">
-              <a href="#">
+            <li class="blog-post-item">
+              <a href="https://medium.com/@ntejas23mit/ui-and-ux-design-creating-digital-experiences-that-truly-matter-ab58ff9b5739"
+                target="_blank" rel="noopener noreferrer">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images/UIUX.png"
+                    alt="UI and UX Design Creating Digital Experiences That Truly Matter" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">UI/UX Design</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-01-01">Medium Blog</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <h3 class="h3 blog-item-title">
+                    UI & UX Design
+                  </h3>
 
                   <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    An introduction to UI and UX design, explaining how visual design and user
+                    experience work together to create meaningful digital products.
                   </p>
 
                 </div>
 
               </a>
-            </li> -->
+            </li>
+
 
 
 
           </ul>
+
+
 
         </section>
 
@@ -1096,154 +1129,154 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-  (function () {
-    emailjs.init("r23HxBFRKdjb4iokc");
-  })();
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("r23HxBFRKdjb4iokc");
+    })();
 
-  // Toast notification function
-  function showToast(message, type = 'success') {
-    const toast = document.getElementById('toast');
-    toast.textContent = message;
-    toast.className = 'toast ' + type + ' show';
-    
-    setTimeout(() => {
-      toast.classList.remove('show');
-    }, 4000);
-  }
+    // Toast notification function
+    function showToast(message, type = 'success') {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.className = 'toast ' + type + ' show';
 
-  document
-    .getElementById("contact-form")
-    .addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      emailjs.sendForm(
-        "service_za4d4qc",
-        "template_98qajog",
-        this
-      ).then(
-        function () {
-          showToast("Message sent successfully!", 'success');
-          document.getElementById("contact-form").reset();
-        },
-        function (error) {
-          showToast("Failed to send message. Please try again.", 'error');
-          console.error("EmailJS Error:", error);
-        }
-      );
-    });
-</script>
-
-
-
-<!-- 🎨 AMAZING ANIMATION SCRIPTS -->
-<script>
-  // Particle Canvas Animation
-  const canvas = document.getElementById('particles-canvas');
-  const ctx = canvas.getContext('2d');
-  
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
-  const particles = [];
-  const particleCount = 50;
-
-  class Particle {
-    constructor() {
-      this.x = Math.random() * canvas.width;
-      this.y = Math.random() * canvas.height;
-      this.size = Math.random() * 2 + 1;
-      this.speedX = Math.random() * 1 - 0.5;
-      this.speedY = Math.random() * 1 - 0.5;
-      this.opacity = Math.random() * 0.5 + 0.2;
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 4000);
     }
 
-    update() {
-      this.x += this.speedX;
-      this.y += this.speedY;
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
 
-      if (this.x > canvas.width) this.x = 0;
-      if (this.x < 0) this.x = canvas.width;
-      if (this.y > canvas.height) this.y = 0;
-      if (this.y < 0) this.y = canvas.height;
+        emailjs.sendForm(
+          "service_za4d4qc",
+          "template_98qajog",
+          this
+        ).then(
+          function () {
+            showToast("Message sent successfully!", 'success');
+            document.getElementById("contact-form").reset();
+          },
+          function (error) {
+            showToast("Failed to send message. Please try again.", 'error');
+            console.error("EmailJS Error:", error);
+          }
+        );
+      });
+  </script>
+
+
+
+  <!-- 🎨 AMAZING ANIMATION SCRIPTS -->
+  <script>
+    // Particle Canvas Animation
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const particles = [];
+    const particleCount = 50;
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2 + 1;
+        this.speedX = Math.random() * 1 - 0.5;
+        this.speedY = Math.random() * 1 - 0.5;
+        this.opacity = Math.random() * 0.5 + 0.2;
+      }
+
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+
+        if (this.x > canvas.width) this.x = 0;
+        if (this.x < 0) this.x = canvas.width;
+        if (this.y > canvas.height) this.y = 0;
+        if (this.y < 0) this.y = canvas.height;
+      }
+
+      draw() {
+        ctx.fillStyle = `rgba(255, 187, 84, ${this.opacity})`;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
     }
 
-    draw() {
-      ctx.fillStyle = `rgba(255, 187, 84, ${this.opacity})`;
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-      ctx.fill();
+    function init() {
+      for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle());
+      }
     }
-  }
 
-  function init() {
-    for (let i = 0; i < particleCount; i++) {
-      particles.push(new Particle());
-    }
-  }
+    function connectParticles() {
+      for (let a = 0; a < particles.length; a++) {
+        for (let b = a; b < particles.length; b++) {
+          const dx = particles[a].x - particles[b].x;
+          const dy = particles[a].y - particles[b].y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
 
-  function connectParticles() {
-    for (let a = 0; a < particles.length; a++) {
-      for (let b = a; b < particles.length; b++) {
-        const dx = particles[a].x - particles[b].x;
-        const dy = particles[a].y - particles[b].y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-
-        if (distance < 120) {
-          ctx.strokeStyle = `rgba(255, 187, 84, ${0.2 * (1 - distance / 120)})`;
-          ctx.lineWidth = 1;
-          ctx.beginPath();
-          ctx.moveTo(particles[a].x, particles[a].y);
-          ctx.lineTo(particles[b].x, particles[b].y);
-          ctx.stroke();
+          if (distance < 120) {
+            ctx.strokeStyle = `rgba(255, 187, 84, ${0.2 * (1 - distance / 120)})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(particles[a].x, particles[a].y);
+            ctx.lineTo(particles[b].x, particles[b].y);
+            ctx.stroke();
+          }
         }
       }
     }
-  }
 
-  function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
-    for (let i = 0; i < particles.length; i++) {
-      particles[i].update();
-      particles[i].draw();
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let i = 0; i < particles.length; i++) {
+        particles[i].update();
+        particles[i].draw();
+      }
+
+      connectParticles();
+      requestAnimationFrame(animate);
     }
-    
-    connectParticles();
-    requestAnimationFrame(animate);
-  }
 
-  init();
-  animate();
+    init();
+    animate();
 
-  window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  });
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
 
-  // Cursor Glow Effect
-  const cursorGlow = document.querySelector('.cursor-glow');
-  let mouseX = 0, mouseY = 0;
-  let glowX = 0, glowY = 0;
+    // Cursor Glow Effect
+    const cursorGlow = document.querySelector('.cursor-glow');
+    let mouseX = 0, mouseY = 0;
+    let glowX = 0, glowY = 0;
 
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-  });
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
 
-  function animateGlow() {
-    glowX += (mouseX - glowX) * 0.15;
-    glowY += (mouseY - glowY) * 0.15;
-    
-    cursorGlow.style.left = glowX + 'px';
-    cursorGlow.style.top = glowY + 'px';
-    
-    requestAnimationFrame(animateGlow);
-  }
+    function animateGlow() {
+      glowX += (mouseX - glowX) * 0.15;
+      glowY += (mouseY - glowY) * 0.15;
 
-  animateGlow();
-</script>
+      cursorGlow.style.left = glowX + 'px';
+      cursorGlow.style.top = glowY + 'px';
+
+      requestAnimationFrame(animateGlow);
+    }
+
+    animateGlow();
+  </script>
 </body>
 
 </html>
